@@ -11,15 +11,15 @@
             <StackPanel Orientation="Horizontal" >
                 <TextBlock FontSize="20" Margin="10 25 10 10">身高:</TextBlock>
                 <TextBox x:Name="tb_height" Width="350" Height="30" FontSize="20" Margin="10 20 10 10"></TextBox>
-                <Button x:Name="btn_height" Width="50" Height="30" Margin="10 20 10 10">清除</Button>
+                <Button x:Name="btn_height" Width="50" Height="30" Margin="10 20 10 10" Click="btn_height_Click">清除</Button>
             </StackPanel >
             <StackPanel Orientation="Horizontal">
                 <TextBlock FontSize="20" Margin="10 25 10 10">體重:</TextBlock>
                 <TextBox x:Name="tb_weight" Width="350" Height="30" FontSize="20" Margin="10 20 10 10"></TextBox>
-                <Button x:Name="btn_weight" Width="50" Height="30" Margin="10 20 10 10">清除</Button>
+                <Button x:Name="btn_weight" Width="50" Height="30" Margin="10 20 10 10" Click="btn_weight_Click">清除</Button>
             </StackPanel >
-            <Button Width="500" Height="30" FontSize="20" Margin="0 10 0 10">計算</Button>
-            <TextBlock x:Name="BMI" Foreground="Red" FontSize="100" TextAlignment="Center">0</TextBlock>
+            <Button Width="500" Height="30" FontSize="20" Margin="0 10 0 10" Click="Button_Click_1">計算</Button>
+            <TextBlock x:Name="bmi" Foreground="Red" FontSize="100" TextAlignment="Center" Margin="0,0,-0.6,0"><Run Text="0"/></TextBlock>
         </StackPanel>
     </Grid>
 </Window>

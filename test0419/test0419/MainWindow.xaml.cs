@@ -29,5 +29,23 @@ namespace test0419
         {
             this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            float height = float.Parse(tb_height.Text);
+            float weight = float.Parse(tb_weight.Text);
+            float BMI = (weight / (height *height/10000));   
+            this.bmi.Text = BMI.ToString();
+        }
+
+        private void btn_height_Click(object sender, RoutedEventArgs e)
+        {
+            this.tb_height.Clear();
+        }
+
+        private void btn_weight_Click(object sender, RoutedEventArgs e)
+        {
+            this.tb_weight.Clear();
+        }
     }
 }
