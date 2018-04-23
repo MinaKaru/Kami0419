@@ -1,0 +1,25 @@
+﻿<Window x:Class="test0419.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test0419"
+        mc:Ignorable="d"
+        Title="BMI計算器" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock FontSize="20" Margin="10 25 10 10">身高:</TextBlock>
+                <TextBox x:Name="tb_height" Width="350" Height="30" FontSize="20" Margin="10 20 10 10"></TextBox>
+                <Button x:Name="btn_height" Width="50" Height="30" Margin="10 20 10 10">清除</Button>
+            </StackPanel >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="20" Margin="10 25 10 10">體重:</TextBlock>
+                <TextBox x:Name="tb_weight" Width="350" Height="30" FontSize="20" Margin="10 20 10 10"></TextBox>
+                <Button x:Name="btn_weight" Width="50" Height="30" Margin="10 20 10 10">清除</Button>
+            </StackPanel >
+            <Button Width="500" Height="30" FontSize="20" Margin="0 10 0 10">計算</Button>
+            <TextBlock x:Name="BMI" Foreground="Red" FontSize="100" TextAlignment="Center">0</TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
