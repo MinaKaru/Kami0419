@@ -34,7 +34,7 @@ namespace test0419
         {
             float height = float.Parse(tb_height.Text);
             float weight = float.Parse(tb_weight.Text);
-            float BMI = (weight / (height *height/10000));   
+            float BMI = (weight / (height * height / 10000));
             this.bmi.Text = BMI.ToString();
         }
 
